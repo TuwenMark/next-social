@@ -6,7 +6,7 @@ import React from 'react'
 export default function MobileMenu() {
   const [isOpen, setIsOpen] = React.useState(false)
   return (
-    <button className="flex flex-col gap-1" onClick={() => setIsOpen(!isOpen)}>
+    <button className="flex flex-col gap-1 md:hidden" onClick={() => setIsOpen(!isOpen)}>
       <div
         className={`w-6 h-1 bg-blue-500 rounded-sm ${
           isOpen ? 'rotate-45' : ''
